@@ -37,3 +37,4 @@ select=["ALL"]
 #     "W",  # pycodestyle warning
 # ]
 ignore-init-module-imports = true
+ignore=["FA100"]
