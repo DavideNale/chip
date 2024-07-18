@@ -1,4 +1,4 @@
-"""Task."""
+"""Tool."""
 import abc
 from dataclasses import dataclass
 from typing import Any
@@ -7,8 +7,8 @@ from .state import State
 
 
 @dataclass
-class Task(abc.ABC):
-    """Abstract representation of a Task."""
+class Tool(abc.ABC):
+    """Abstract representation of a Tool."""
 
     name: str
     description: str
