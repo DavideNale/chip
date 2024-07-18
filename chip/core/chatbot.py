@@ -22,12 +22,8 @@ class ChatbotABC(ABC):
     debug: bool = False
 
     @abstractmethod
-    def process(self, message: str) -> str:
+    def complete(self, message: str) -> str:
         """Process user input."""
-
-    @abstractmethod
-    def spawn(self) -> "ChatbotABC":
-        """Return a copy of the chatbot with the same context."""
 
     @abstractmethod
     def add_message(self, role: str, content: str) -> None:
