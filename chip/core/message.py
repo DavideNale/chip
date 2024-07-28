@@ -11,6 +11,7 @@ from dataclasses import asdict, dataclass
 VALID_ROLES = ["user", "system", "message"]
 
 
+
 class InvalidRoleError(Exception):
     """Exception raised for invalid roles."""
 
@@ -24,6 +25,7 @@ class InvalidFormatError(Exception):
     def __init__(self) -> None:
         """Initialize the InvalidFormatError."""
         super().__init__("Dictionary must contain 'role' and 'content' keys")
+
 
 
 @dataclass(kw_only=True, frozen=True)
