@@ -15,5 +15,5 @@ class Tool(abc.ABC):
     params: dict
 
     @abc.abstractmethod
-    def run(self, state: State, **kwargs: Any) -> Any:  # noqa: ANN401
+    def run(self, state: State, **kwargs: Any) -> Any:
         """Run the task."""

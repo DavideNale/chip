@@ -28,13 +28,5 @@ output-format = "full"
 
 [tool.ruff.lint]
 select=["ALL"]
-# select = [
-#     "B",  # flake8-bugbear
-#     "E",  # pycodestyle error
-#     "F",  # pyflakes
-#     "I",  # isort
-#     "UP",  # pyupgrade
-#     "W",  # pycodestyle warning
-# ]
 ignore-init-module-imports = true
-ignore=["FA100"]
+ignore=["FA100","ANN401"]

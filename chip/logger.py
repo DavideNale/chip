@@ -22,7 +22,7 @@ def configure() -> None:
         cache_logger_on_first_use=False,
     )
 
-def new() -> structlog.BoundLogger:
+def get_logger() -> structlog.BoundLogger:
     """Return a new configured logger."""
     return structlog.get_logger()
 

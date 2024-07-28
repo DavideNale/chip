@@ -40,6 +40,6 @@ class ChatbotABC(ABC):
         self.add_message("system", self.prompt)
         self.tools = self._generate_tools()
 
-    def _generate_tools(self) -> List[Dict[str, Any]]:
-        """Generate tools configuration from tasks."""
-        ...
+
+def generate_tools() -> List[Dict[str, Any]]:
+    """Generate tools configuration from tasks."""
